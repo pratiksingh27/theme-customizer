@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-SB UI Kit Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
+    <link rel="manifest" href="image/site.webmanifest">
+</head>
+
+<body>
+    <!-- type one menu -->
+    <!-- <nav>
+        <div><h1 class="logo">Menu</h1></div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Landinga</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Documantation</a></li>
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
+            <span class="icon">
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-github"></i>
+                <i class="fa fa-twitter"></i>
+            </span>
+        </ul>
+    </nav> -->
+    <div id="sidebar">
+        <div class="toggle-btn">
+            <i class="fa fa-gear" onclick="out()"></i>
+        </div>
+        <div class="top">
+            <h3>Theme switcher</h3>
+        </div>
+        <div class="right">
+            <!-- <h3>Theme switcher</h3> -->
+            <h4><i>Try a pre built switch</i></h4>
+            <span class="color red">Sunset <i class="fa fa-check red" style="visibility: hidden;"></i></span>
+            <span class="color blue">Default <i class="fa fa-check blue" style=" visibility: hidden ;"></i></span>
+            <span class="color orange">Flat <i class="fa fa-check orange" style="visibility: hidden;"></i></span>
+            <span class="color violet">Seafoam <i class="fa fa-check" style="visibility: hidden;"></i></span>
+            <span class="color original">Original <i class="fa fa-check" style="visibility: hidden;"></i></span>
+
+            <h4><i>Or choose your own colors...</i></h4>
+            <div class="color-picker">
+                <div class="picker">
+                    <label for="">Primary Color</label>
+                    <input type="color" value="#0050e4" id="input1" placeholder="hiii">
+                   
+                </div>
+                <div class="picker">
+                    <label for="">Secondary Color</label>
+                    <input type="color" value="#43da86" id="input2">
+                    
+                </div>
+            </div>
+            <h4><i>Pick a random color</i></h4>
+            <button id="random" onclick="randomColor()">Random color</button><br><br>
+            <hr><br>
+            <p style="padding: 5px 10px;"><i>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam rem similique doloremque eius reprehenderit nisi quas tempora perspiciatis ullam voluptatem! Beatae deserunt neque ipsum necessitatibus.</i></p>
+        </div>
+    </div>
+    <!-- type two menu -->
+    <header class="header">
+        <div class="container">
+            <div class="row justify-content-between align-items-centre">
+                <div class="logo">
+                    <a href="#">SB UI Kit Pro</a>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-bars nav-toggler"></i>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li>
+                            <a href="#" onclick="down()" id="drop-btn">Landings <i class="fa fa-caret-down"></i></a>
+                            <div class="wrapper">
+                                <ul class="drop1">
+                                    <li>Multipurpose</li>
+                                    <li>Agency</li>
+                                    <li>Press</li>
+                                    <li>Director</li>
+                                    <li>Rental</li>
+                                    <li>Real Estate</li>
+                                    <li>Classified</li>
+                                    <li>Lead Capture</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" onclick="down2()" id="drop-btn2">Pages <i class="fa fa-caret-down"></i></a>
+                            <ul class=" drop1 drop2">
+                                <li>Basic Page</li>
+                                <li>About</li>
+                                <li>Pricing</li>
+                                <li>Contact</li>
+                                <li>Team</li>
+                                <li>Terms</li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Documantation</a></li>
+                        <li><a href="#" id="buy">Buy Now <i class="fa fa-arrow-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="full1" id="m">
+        <div class="box">
+            <div class="img">
+                <img src="image/vecteezy_people-avatars-profile-id-images-cv-head-businessman-women-collection_.jpg"
+                    alt="">
+            </div>
+            <div class="text">
+                <h1>Welcome to my portfolio!</h1>
+                <p>I am a graphic artist, illustrator, and UI designer specializing in modern, creative design based in
+                    Wildemount, TX</p>
+            </div>
+        </div>
+    </section>
+    <section class="full">
+        <div class="custom-shape-divider-top-1647541573">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="box-2 flex">
+            
+           
+            <div class="tc">
+                <span class="skill ill">
+                    <i class="fa fa-pen-to-square fas"></i>
+                </span>
+                <h1>Illustration</h1>
+                <p>I provide custom illustration services for contract clients</p>
+            </div>
+
+            <div class="tc">
+                <span class="skill ui">
+                    <i class="fa fa-bezier-curve fas"></i>
+                </span>
+                <h1>UI Design</h1>
+                <p>User experience and interface designs is one of my specialties</p>
+            </div>
+
+            <div class="tc">
+                <span class="skill grap">
+                    <i class="fa fa-chart-area fas "></i>
+                </span>
+                <h1>Graphic Design</h1>
+                <p>Photo restoration, post processing, and other photo services</p>
+            </div>
+            
+            
+        </div>
+        
+    </section>
+    <div class="custom-shape-divider-top-1647541573">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill1"></path>
+        </svg>
+    </div>
+    <div class="box-2 grid-3">
+        <div class="vertical">
+            <div class="col-md-4 col-sm-6">
+                <div class="card first">
+                    <img src="image/book.jfif" alt="">
+                    <div class="card-text">
+                        <h3>BOOK</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card sec">
+                    <img src="image/flower mug.jfif" alt="">
+                    <div class="card-text">
+                        <h3>FLOWER MUG</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card third">
+                    <img src="image/cactus.jfif" alt="">
+                    <div class="card-text">
+                        <h3>CACTUS DISPLAY</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="vertical">
+            <div class="col-md-4 col-sm-6">
+                <div class="card sec">
+                    <img src="image/reading.jfif" alt="">
+                    <div class="card-text">
+                        <h3>READING</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card third">
+                    <img src="image/white.jfif" alt="">
+                    <div class="card-text">
+                        <h3>WHITE BOOK</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card first">
+                    <img src="image/photo face.jfif" alt="">
+                    <div class="card-text">
+                        <h3>PHOTO FACE</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="vertical">
+            <div class="col-md-4 col-sm-6">
+                <div class="card first">
+                    <img src="image/catalog.jfif" alt="">
+                    <div class="card-text">
+                        <h3>CATALOG</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card sec">
+                    <img src="image/note.jfif" alt="">
+                    <div class="card-text">
+                        <h3>NOTEBOOK</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card third">
+                    <img src="image/stand.jfif" alt="">
+                    <div class="card-text">
+                        <h3>BOOK STAND</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <!-- <div class="custom-shape-divider-top-1647541573">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill"></path>
+            </svg>
+        </div> -->
+        <div class="text">
+            <h2>Contact me</h2>
+            <p>I am available for contract work, when you're ready - let me know!</p>
+        </div>
+        <div class="info">
+            <div class="card-1">
+
+                <i class="fa fa-message fa-2x"></i>
+                <p>helll@ex.gmail.com</p>
+            </div>
+            <div class="card-2">
+
+                <i class="fa fa-phone fa-2x"></i>
+
+                <p>555-123-4567</p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-1">
+            <h2>SB UI Kit Pro</h2><br>
+            <p>Design made easy</p><br>
+            <i class="fa-brands fa-instagram fa-lg"></i>
+            <i class="fa-brands fa-facebook fa-lg"></i>
+            <i class="fa-brands fa-twitter fa-lg"></i>
+            <i class="fa-brands fa-github fa-lg"></i>
+        </div>
+        <div class="footer-2">
+            <div>
+                <h3 class="pb-3">PRODUCT</h3>
+                <ul>
+                    <li>Landing
+                    </li>
+                    <li>Pages
+                    </li>
+                    <li>Sections
+                    </li>
+                    <li>Documentation
+                    </li>
+                    <li>Changelog</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="pb-3">TECHNICAL</h3>
+                <ul>
+                    <li>Documentation
+                    </li>
+                    <li>Changelog
+                    </li>
+                    <li>Theme Customizer
+                    </li>
+                    <li>UI Kit</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="pb-3">INCLUDES</h3>
+                <ul>
+                    <li>Utilities</li>
+                    <li>Components</li>
+                    <li>Layouts</li>
+                    <li>Code Samples</li>
+                    <li>Products</li>
+                    <li>Affillates</li>
+                    <li>Updates</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="pb-3">LEGAl</h3>
+                <ul>
+                    <li>Privacy Policy
+                    </li>
+                    <li>Terms and Conditions
+                    </li>
+                    <li>License</li>
+
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <hr>
+    <div class="copyright">
+        <p>&copy;copyright | 2022</p>
+        <p>Privacy Policy Terms & Conditions</p>
+    </div>
+</body>
+<script>
+    // const mainMenu = document.querySelector('.mainMenu');
+    // const closeMenu = document.querySelector('.closeMenu');
+    // const openMenu = document.querySelector('.openMenu');
+    // const logo = document.querySelector('.logo');
+
+
+    // openMenu.addEventListener('click' , open);
+    // closeMenu.addEventListener('click' , close);
+    // function open(){
+    //     mainMenu.style.display = 'flex';
+    //     mainMenu.style.top = '0';
+    //     logo.style.display = 'block';
+    // }
+    // function close(){
+    //     mainMenu.style.top = '-100%';
+    // }
+    // theme switcher color
+    let red = document.querySelector('.red');
+    let blue = document.querySelector('.blue');
+    let orange = document.querySelector('.orange');
+    let yellow = document.querySelector('.yellow');
+    let violet = document.querySelector('.violet');
+    let original = document.querySelector('.original');
+    let content = document.querySelector('h1');
+    let content1 = document.querySelector('p');
+    let content2 = document.querySelector('#buy');
+    let check1 = document.querySelector('.red');
+    let check2 = document.querySelector('.blue');
+    let check3 = document.querySelector('.orange');
+
+    red.addEventListener('click', Red);
+
+    function Red() {
+        content2.style.backgroundColor = "red";
+    }
+
+    blue.addEventListener('click', Blue);
+
+    function Blue() {
+        content2.style.backgroundColor = "blue";
+    }
+
+    orange.addEventListener('click', Orange);
+
+    function Orange() {
+        content2.style.backgroundColor = "purple";
+    }
+
+    // yellow.addEventListener('click', Yellow);
+
+    // function Yellow() {
+    // content.style.color = 'yellow';
+    // content1.style.color = 'yellow';
+    // content2.style.backgroundColor = 'yellow';
+    // }
+
+    violet.addEventListener('click', Violet);
+
+    function Violet() {
+        // content.style.color = 'violet';
+        // content1.style.color = 'violet';
+        content2.style.backgroundColor = "green";
+    }
+
+    original.addEventListener('click', Original);
+
+    function Original() {
+        content.style.color = '#363d47';
+        content1.style.color = '#69707a';
+        content2.style.backgroundColor = "#363d47";
+    }
+
+    // choose by your wish
+    // let colorInput = document.querySelector('#color');
+    // let hexInput = document.querySelector('#hex');
+    // let input = document.querySelector(".input");
+
+
+
+    // colorInput.addEventListener('click', Color)
+    // // input.addEventListener('click', Color)
+
+    // function Color() {
+    //     let color = colorInput.value;
+    //     // let color = input.value;
+    //     color = hexInput.value;
+
+    //     // content.style.color = color;
+    //     // content1.style.color = color;
+    //     content2.style.backgroundColor = color;
+    // }
+
+    function randomColor() {
+        content2.style.backgroundColor = 'rgb(' + Math.round(Math.random() * 255) +
+            ',' + Math.round(Math.random() * 255) +
+            ',' + Math.round(Math.random() * 255) + ')';
+    }
+
+
+
+    // theme switcher box
+    function out() {
+        document.getElementById("sidebar").classList.toggle('active');
+    }
+
+    const drop_btn = document.querySelector("#drop-btn");
+    const drop_btn2 = document.querySelector("#drop-btn2");
+    const wrapper = document.querySelector(".drop1");
+    const wrapper2 = document.querySelector(".drop2");
+
+    drop_btn.onclick = (() => {
+        wrapper.classList.toggle('down');
+        wrapper2.classList.toggle('falldown');
+    });
+    drop_btn2.onclick = (() => {
+
+        wrapper2.classList.toggle('fall');
+
+    });
+
+    // menu javascript
+    const navToggler = document.querySelector(".nav-toggler");
+
+    navToggler.addEventListener('click', navToggle);
+
+    function navToggle() {
+        navToggler.classList.toggle("active");
+        const nav = document.querySelector(".nav");
+        nav.classList.toggle("open");
+        if (nav.classList.contains("open")) {
+            nav.style.maxHeight = nav.scrollHeight = "100%";
+        } else {
+            nav.removeAttribute("style");
+        }
+    }
+</script>
+
+</html>
